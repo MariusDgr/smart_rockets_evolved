@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <style> body {padding: 0; margin: 0;} </style>
+  </head>
+  <body>
+    <div id="canvascontainer">
+    </div>
+    <p>
+      <button id="startButton">Start</button>
+      <button id="pauseButton">Pause</button>
+      <button id="skipButton">Skip</button>
+      <button id="skipTargetButton">Skip to Target</button>
+      <button id="showBestADNbutton">See best recorded ADN</button>
+
+    </p>
+    <p>
+      <button id="lineButton">Draw Line</button>
+      <button id="spawnButton">Set Spawn Point</button>
+      <button id="targetButton">Set Target Point</button>
+    </p>
+    <p>
+      <button id="clearButton">Clear</button>
+      <button id="editButton">Edit</button>
+    </p>
+    <p>
+      <button id="saveButton">Save</button>
+      <textarea cols=40 rows=1 id="titleOfCanvas">
+    </textarea>
+    </p>
+
+    <div id="canvasInfo">
+    </div>
+
+    <br>
+    <p>
+      List of Courses:
+    </p>
+    <p>
+      <ol id="drawinglist"></ol>
+    </p>
+  </body>
+</html>
