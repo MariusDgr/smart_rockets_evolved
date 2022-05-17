@@ -6,6 +6,8 @@ The rockets try to find the fastest way towards the target. Every cell(rocket) h
 
 When the lifespan of a generation ends, or every rocket either hit an obstacle or the target, the performance of each individual rocket is evaluated. The rockets that were able to get closer to the target, or got to the target faster receive a greater fitness value and this makes them more likely to be selected as a parent cell for the creation of the next generation. The DNA of the next generation is built with crossover functions and random mutations.
 
+The code presented here uses the codebase presented in the Smart Rockets Coding challenge (https://www.youtube.com/watch?v=bGz7mv2vD6g) and expands upon it.
+ 
 ## Usage
 
 ![Init page](doc_resource/Capture.PNG)
